@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Flow Tracker</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Cash Flow Tracker</h1>
+    <div style="text-align: center;">
+        <label for="type">Typ:</label>
+        <select id="type">
+            <option value="income">Příjem</option>
+            <option value="expense">Výdaj</option>
+        </select>
+        <label for="amount">Částka:</label>
+        <input type="number" id="amount" placeholder="Zadejte částku">
+        <button onclick="addTransaction()">Přidat</button>
+    </div>
+    <table id="cashFlowTable">
+        <thead>
+            <tr>
+                <th>Typ</th>
+                <th>Částka</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Transakce budou přidány zde -->
+        </tbody>
+    </table>
+    <h2 style="text-align: center;">Celkový stav: <span id="totalBalance">0</span> Kč</h2>
+
+    <script src="cashflow.js"></script>
+</body>
+</html>
