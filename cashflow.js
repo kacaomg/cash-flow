@@ -51,3 +51,4 @@ function updateTotalBalance() {
 
     document.getElementById('totalBalance').textContent = totalBalance.toFixed(2);
 }
+ějšuěrjšěorjěšoroěšjqrěšiufoějšfěwfjiwoejfwíúfoejfWOŮFW
